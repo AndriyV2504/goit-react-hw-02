@@ -6,10 +6,7 @@ import Notification from "./Notification/Notification";
 const App = () => {
   return (
     <div>
-      <Description
-        nameCafe="Sip Happens Café"
-        description="Please leave your feedback about our service by selecting one of the options below."
-      />
+      <Description />
       <Options />
       <Feedback />
       <Notification />
