@@ -17,6 +17,11 @@ const App = () => {
     localStorage.setItem("feedback", JSON.stringify(feedback));
   }, [feedback]);
 
+  const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
+  const positiveFeedbackPercent = totalFeedback
+    ? Math.round((feedback.good / totalFeedback) * 100)
+    : 0;
+
   return (
     <div>
       <Description />
